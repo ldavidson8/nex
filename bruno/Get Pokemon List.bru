@@ -1,0 +1,15 @@
+meta {
+  name: Get Pokemon List
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://pokeapi.co/api/v2/pokemon?limit=1025
+  body: none
+  auth: none
+}
+
+params:query {
+  limit: 1025
+}
