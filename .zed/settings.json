@@ -1,10 +1,15 @@
 {
-	"languages": {
-		"CSS": {
-			"language_servers": ["tailwindcss-language-server"]
-		},
-		"TypeScript": {
-			"language_servers": ["tsgo"]
-		}
-	}
+    "format_on_save": "on",
+    "languages": {
+        "CSS": {
+            "language_servers": [
+                "tailwindcss-language-server"
+            ]
+        },
+        "TypeScript": {
+            "language_servers": [
+                "tsgo"
+            ]
+        },
+    }
 }

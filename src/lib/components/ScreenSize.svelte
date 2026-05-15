@@ -1,15 +1,15 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 
-	let width = 0;
-	let height = 0;
+	let width = $state(0);
+	let height = $state(0);
 
 	onMount(() => {
 		updateDimensions();
-		window.addEventListener('resize', updateDimensions);
+		window.addEventListener("resize", updateDimensions);
 
 		return () => {
-			window.removeEventListener('resize', updateDimensions);
+			window.removeEventListener("resize", updateDimensions);
 		};
 	});
 
