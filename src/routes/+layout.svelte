@@ -6,6 +6,8 @@
 	import { ModeWatcher } from "mode-watcher";
 	import ScreenSize from "$lib/components/ScreenSize.svelte";
 	import Seo from "$lib/components/Seo.svelte";
+	import Footer from "$lib/components/Footer.svelte";
+	import Navbar from "$lib/components/Navbar.svelte";
 
 	let { children } = $props();
 
@@ -26,7 +28,9 @@
 <ModeWatcher />
 <svelte:boundary>
 	<main>
+		<Navbar />
 		{@render children()}
+		<Footer />
 	</main>
 	{#if dev}
 		<ScreenSize />
